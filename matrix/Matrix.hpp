@@ -33,13 +33,11 @@ class Slice;
 template<typename Type, size_t M, size_t N>
 class Matrix
 {
-
-    Type _data[M][N] {};
-
 public:
-
     // Constructors
     Matrix() = default;
+
+    Type _data[M][N] {};
 
     explicit Matrix(const Type data_[M*N])
     {
